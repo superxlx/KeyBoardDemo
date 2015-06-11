@@ -1,6 +1,12 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+@class XKeyBoard;
+@protocol KeyBoardDlegate <NSObject>
 
+- (void)keyboardWillShowNotification:(NSNotification *)notification;
+- (void)keyboardWillHideNotification:(NSNotification *)notification;
+
+@end
 @interface XKeyBoard : NSObject
 /**
  *  注册键盘出现

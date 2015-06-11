@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 #import "XKeyBoard.h"
-@interface ViewController ()
+@interface ViewController ()<KeyBoardDlegate>
 @property (nonatomic,strong) UIView *testview;
 @end
 
