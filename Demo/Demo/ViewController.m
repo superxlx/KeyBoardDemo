@@ -69,6 +69,9 @@
                      } completion:nil];
 }
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
+    /**
+     *  触摸屏幕使键盘消失
+     */
     [self.view endEditing:true];
 }
 
